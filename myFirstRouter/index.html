@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>Routing Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+  </head>
+  <body controller="mainCtrl">
+      
+      <div>
+        <nav>
+            <a ui-sref="home">Home</a>
+            <a ui-sref="roster">Roster</div>
+        </nav>
+      </div>
+      
+    <ui-view></ui-view>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+    <script src="playerService.js"></script>
+    <script src="roster/rosterCtrl.js"></script>
+    <script src="player/playerCtrl.js"></script>
+
+  </body>
+</html>
